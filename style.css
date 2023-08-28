@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* height: 9.2vh; */
+}
+.leftNav{
+    display: flex;
+    flex-direction: row;
+}
+.navtext{
+    padding-left:0.5rem ;
+    color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+.navtext p{
+    padding-left: 0.9rem;
+    font-size: 1rem;
+    margin: 0;
+}
+.navImg Img{
+    height: 2rem;
+} 
+.rightNav{
+    display: flex;
+}
+.icon{
+  color: #858585;
+   padding: 1rem;
+}
+.cart{
+    background-color: rgb(95, 239, 59);
+}
+.cart:hover{
+       color: aliceblue;
+        background-color: black;
+}
+.ac:hover{
+    color: aliceblue;
+    background-color: black;
+}
+.container1{
+    padding-top: 1rem;
+    max-width: 75%;
+    margin: auto;
+}
+/* .container button:hover{
+    background-color: aliceblue;
+    color: black;
+} */
+.w{
+    width:21rem;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 5vw);
+    grid-gap: 1.25rem;
+    margin-top: 11rem;
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery__item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.gallery__item2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.gallery__item3 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.gallery__item4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 10;
+}
+.gallery__item5 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 10;
+}
+.gallery__item6 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+.gallery__item7 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 16;
+}
+.gallery__item8 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 10;
+    grid-row-end: 13;
+}
+.gallery__item9 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 9;
+    grid-row-end: 12;
+}
+.gallery__item10 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 13;
+    grid-row-end: 16;
+}
+.gallery__item11 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 12;
+    grid-row-end: 14;
+}
+.gallery__item12 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 14;
+    grid-row-end: 17;
+}
+.carf{
+    width: 21rem;
+    margin-top: 5rem;
+}
+.imgh{
+    width: 33.75rem;
+    height: 40.5rem;
+}
+.abc{
+    background-color: rgb(218, 36, 36);
+    left: 28%;
+    top: 68%;
+    padding: 1rem;
+    color: aliceblue;
+}
+.circle-border {
+    width: 200px;
+    height: 200px;
+    border: 5px solid lightgray; /* Outer border color */
+    border-radius: 50%; /* Makes the element a circle */
+    position: relative;
+    overflow: hidden; /* Hide the overflow to achieve the fill effect */
+  }
+
+  .fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blue; /* Color of the filled portion */
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  }
+
+  .page1{
+    width:20rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .gallery__img1{
+    border-radius: 50%;
+    width: 5rem; 
+  }
+  .page1:hover{
+    border: 1px solid red;
+  }
+  .c1{
+    color: #aaa;
+    padding-bottom: 2rem;
+  }
+  .k{
+    width: 15rem;
+  }
+  .hmk{
+    width: 60%;
+  }
+ .md{
+    color: #777;
+ } 
+
+ @media(min-width:832px) AND (max-width:1154px){
+    .k{
+        width: 10rem;
+    }
+    .imgh{
+        width: 20.75rem;
+        height: 27.5rem;
+    }
+    .bio{
+        flex: none;
+    }
+}
+@media(min-width:523) AND (max-width:837px){
+    .k{
+        width: 2rem;
+        flex-direction: column;
+    }
+    .imgh{
+        width: 15.75rem;
+        height: 22.5rem;
+    }
+    .bio{
+        display: none;
+    }
+}
